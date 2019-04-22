@@ -1,8 +1,8 @@
 //The Machine's code
 //you can comment here using a //
 //[state, If cells is, write, Move, next state]
-q1, 0,, >, q1
-q1, 1, 0, -, q1
-q1, \n, 0, > q1
-q1, ,,end 
-q1,,,end 
+q1, 0,_, >,q1
+q1, 1, 0, -,q1
+q1, \n, 0, >,q1
+q1, ,_, -,end
+q1,_,_, -,end
