@@ -12,8 +12,9 @@ for read in input:
     cells = cells + list(read)
 
 archive = open("code.turing","r")
-code = [i.replace('\n', ',\n').split(',') for i in archive.readlines() if not i.startswith("//") and not str(i).startswith("\n")]
+code = [i.replace('\n', ',\n').replace(' ', '').split(',') for i in archive.readlines() if not i.startswith("//") and not str(i).startswith("\n")]
 archive.close()
+
 
 current_state = states[0]
 
