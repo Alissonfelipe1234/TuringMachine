@@ -5,8 +5,9 @@ input = archiveIn.readlines()
 archiveIn.close()
 
 cells = []
-states = {}
-end_states = {}
+bico
+states = []
+end_states = ()
 for read in input:
     cells = cells + list(read)
 
@@ -15,7 +16,11 @@ code = [i.split(',') for i in archive.readlines() if not i.startswith("//") and 
 archive.close()
 
 for line in code:
-    states[State(line[0])] = []
+    stateStatic = State(line[0])
+    if stateStatic not in states:
+        states.append(stateStatic)
+    
+current_state = states[0]
 
 
 print(states)
